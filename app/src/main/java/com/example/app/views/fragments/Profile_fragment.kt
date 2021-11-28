@@ -1,15 +1,17 @@
-package com.example.app
+package com.example.app.views.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.app.databinding.FragmentMyFragmentBinding
+import com.example.app.R
+import com.example.app.databinding.FragmentProfileFragmentBinding
 
 
-class My_fragment : Fragment(R.layout.fragment_my_fragment) {
-    private var _binding: FragmentMyFragmentBinding? = null
+class Profile_fragment : Fragment(R.layout.fragment_profile_fragment) {
+
+    private var _binding: FragmentProfileFragmentBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,7 +19,7 @@ class My_fragment : Fragment(R.layout.fragment_my_fragment) {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentMyFragmentBinding.inflate(inflater, container, false)
+        _binding = FragmentProfileFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -27,13 +29,12 @@ class My_fragment : Fragment(R.layout.fragment_my_fragment) {
     }
 
     companion object {
-        const val tag = "my_activity_fragment"
+        const val tag = "profile_fragment"
 
-        fun newInstance() : My_fragment {
-            val fragment = My_fragment()
+        fun newInstance() : Profile_fragment {
+            val fragment = Profile_fragment()
             fragment.arguments = Bundle()
             return fragment
         }
-
     }
 }

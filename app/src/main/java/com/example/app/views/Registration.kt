@@ -1,8 +1,9 @@
-package com.example.app
+package com.example.app.views
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar
+import com.example.app.R
 import com.google.android.material.button.MaterialButton
 
 class Registration : Activity(){

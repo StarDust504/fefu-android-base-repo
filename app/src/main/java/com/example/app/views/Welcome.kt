@@ -1,9 +1,8 @@
-package com.example.app
+package com.example.app.views
 import android.app.Activity
 import android.os.Bundle
-import android.widget.Button
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import com.example.app.R
 import com.google.android.material.button.MaterialButton
 
 
