@@ -10,18 +10,11 @@
         app:navigationIcon="@drawable/ic_vector"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-        <TextView
-            android:layout_width="339dp"
-            android:layout_height="match_parent"
-            android:text="@string/enter_tool"
-            android:textSize="20sp"
-            android:textColor="@color/black"/>
-    </androidx.appcompat.widget.Toolbar>
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Вход"/>
     <ImageView
         android:id="@+id/imageViewBike"
-        android:layout_width="271.52dp"
+        android:layout_width="match_parent"
         android:layout_height="240dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
@@ -29,6 +22,8 @@
         app:layout_constraintTop_toBottomOf="@id/toolbar2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:contentDescription="@string/bike"/>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input1"

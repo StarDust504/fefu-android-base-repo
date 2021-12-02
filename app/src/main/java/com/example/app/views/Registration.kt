@@ -16,8 +16,9 @@ class Registration : Activity(){
         val button = findViewById<MaterialButton>(R.id.reg_button)
 
         nav.setOnClickListener {
-            val intent = Intent(this, Welcome::class.java)
-            startActivity(intent)
+
+            finish()
+            
         }
         button.setOnClickListener {
             val intent1 = Intent(this, Login::class.java)
