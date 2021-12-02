@@ -16,7 +16,9 @@ class Login : Activity() {
         val log = findViewById<MaterialButton>(R.id.log_button)
 
         nav.setOnClickListener {
+
             finish()
+
         }
 
         log.setOnClickListener {
