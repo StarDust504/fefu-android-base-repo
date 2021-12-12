@@ -9,32 +9,31 @@ import com.example.app.R
 import com.example.app.databinding.FragmentProfileFragmentBinding
 
 
-class Profile_fragment : Fragment(R.layout.fragment_profile_fragment) {
-
-    private var _binding: FragmentProfileFragmentBinding? = null
-    private val binding get() = _binding!!
+class Profile_fragment : Fragment() {
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentProfileFragmentBinding.inflate(inflater, container, false)
-        return binding.root
+    ): View? {
+        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        childFragmentManager.beginTransaction()
+            .apply {
+                add(
+                    R.id.profile_flow_fragment,
+                    Password.newInstance(),
+                    "profileSettings"
+                )
+                commit()
+            }
     }
 
     companion object {
-        const val tag = "profile_fragment"
-
-        fun newInstance() : Profile_fragment {
-            val fragment = Profile_fragment()
-            fragment.arguments = Bundle()
-            return fragment
-        }
+        @JvmStatic
+        fun newInstance() = Profile_fragment()
     }
 }

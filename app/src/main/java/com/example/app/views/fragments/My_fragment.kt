@@ -7,11 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.app.ParentFragmentManager
 import com.example.app.R
-import com.example.app.databinding.FragmentMyFragmentBinding
 import com.example.app.models.DateActivityData
 import com.example.app.models.MyActivityData
-import com.example.app.views.adapters.MyActivityAdapter
 
 
 class My_fragment : Fragment(){
