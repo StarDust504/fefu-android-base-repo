@@ -1,4 +1,4 @@
-package com.example.app.views.fragments
+package com.example.app
 
 import androidx.fragment.app.FragmentManager
 interface ParentFragmentManager {

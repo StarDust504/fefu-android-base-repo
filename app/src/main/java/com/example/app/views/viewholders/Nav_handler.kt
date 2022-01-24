@@ -1,12 +1,9 @@
 package com.example.app.views.viewholders
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import com.example.app.R
-import com.example.app.views.fragments.ActivityFlowFragment
+import com.example.app.flow.ActivityFlowFragment
 import com.example.app.views.fragments.Profile_fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
